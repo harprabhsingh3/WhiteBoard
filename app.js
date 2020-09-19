@@ -24,6 +24,7 @@ socketServer.on("connection",function(socket){
     })
 })
 //top => uniqly identifies server on a machine
-httpServer.listen(3000,function(){
+let port = process.env.PORT || 3000;
+httpServer.listen(port,function(){
     console.log("server is listening to request at port 3001")
 })
